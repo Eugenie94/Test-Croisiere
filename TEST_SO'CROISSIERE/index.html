@@ -1,0 +1,273 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Test So'Croisiere</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
+    <script src="https://kit.fontawesome.com/a3b3ad3be6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+    <link href="style.css" type="text/css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- DEBUT HEADER : MENU HAMBURGER + LOGO + TELEPHONE -->
+    <header>
+
+        <div class="container-fluid">
+
+            <div class="row align-items-center">
+
+                <div class="col col-md-4">
+                    <i class="fas fa-bars hamburger"></i>
+                </div>
+
+                <div class="col col-md-4 text-center">
+                    <!-- <img src="image\logo.png" alt="croisère">
+                <span class="titre-cote-logo">Les meilleures croisières au bon prix !</span>je prefere coder avec des span car par defaut elle sont en display flex-->
+                    <img src="image\logo2.png" alt="croisère-costa">
+                    <!-- je prefere coder avec des span car par defaut elle sont en display flex
+                 VOIR SI JE LUTILISE OU PAS ou si je trouve une autre solution pour le logo.png-->
+                </div>
+
+                <div class="col col-md-4 text-right">
+                    <p class="numero"><i class="fas fa-phone-alt telephone"></i>04.80.80.88.00</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+    <!-- FIN HEADER : MENU HAMBURGER + LOGO + TELEPHONE -->
+
+
+    <!-- DEBUT MAIN SLIDER ETC-->
+    <div class="fond-gris">
+
+        <main>
+
+            <!-- DEBUT DIV CLASS CONTAINER -->
+            <div class="container">
+
+
+                <!-- DEBUT DIV POUR Z INDEX -->
+                <div class="zindex-sur-slider">
+                    <!-- BONUS : le carousel changera d'image au bout de 5 seconde -->
+
+                    <!-- DEBUT SLIDER -->
+                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="d-block w-100 h-50" src="image\image1-slide.jpg" alt="First slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100 h-50" src="image\image2-slide.jpg" alt="Second slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100 h-50" src="image\image3-slide.jpg" alt="Second slide">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleControls" role="button"
+                            data-slide="prev">
+                            <img class="left-arrow" src="image\left-arrow.png">
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleControls" role="button"
+                            data-slide="next">
+                            <img class="right-arrow" src="image\right-arrow.png">
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                    <!-- FIN SLIDER -->
+
+
+                    <!-- DEBUT VIGNETTE SUR LA GAUCHE DU SLIDER -->
+                    <div>
+                        <img class="vignette" src="image\vignette.png" alt="croisiere">
+                    </div>
+                    <!-- FIN VIGNETTE SUR LA GAUCHE DU SLIDER -->
+
+                    <!-- DEBUT RECTANGLE BLEU SUR SLIDER -->
+                    <div class="rectangle-bleu">
+                        <!-- rectangle bleu -->
+
+                        <!-- DEBUT CONTENU DU RECTANGLE BLEU -->
+                        <p class="prestation text-center mb-4 mt-4 mr-4"><img class="logo-repas mr-2"
+                                src="image\repas.png" alt="repas-hotel">All
+                            inclusive</p>
+                        <div class="barre-blanche"></div>
+                        <p class="prestation text-center mb-4 mt-3 mr-4"><img class="logo-vol mr-3"
+                                src="image\avion.png" alt="vols-inclus">Vols
+                            inclus</p>
+                        <div class="barre-blanche"></div>
+                        <p class="prestation-a-partir-de text-center mt-4">À partir de</p>
+                        <p class="prestation-prix text-center">659€</p>
+                        <!-- FIN CONTENU DU RECTANGLE BLEU -->
+
+                    </div>
+                    <!-- FIN RECTANGLE BLEU SUR SLIDER -->
+
+                </div>
+                <!-- FIN DIV POUR Z INDEX -->
+
+                <!-- DEBUT LEGENDE SLIDER -->
+                <div class="Legende-image-slider">
+
+                    <p class="titre-slider">Croisière Allemagne, Royaume-Uni, Islande</p>
+                    <!-- choix du p pour qu'ils soit en dessous de l'autre-->
+                    <span class="sous-titre-slider">11 jours à bord du</span>
+                    <span class="sous-titre-slider-gras">Costa Luminosa ★★★★★</span>
+
+                </div>
+                <div class="barre-noire"></div>
+                <!-- FIN LEGENDE SLIDER -->
+
+            </div>
+            <!-- FIN DIV CLASS CONTAINER -->
+
+        </main>
+        <!-- DEBUT MAIN SLIDER ETC-->
+
+
+        <section>
+
+            <!-- DEBUT CONTAINER -->
+            <div class="container mt-5">
+
+                <!-- DEBUT 1ERE ROW -->
+                <div class="row align-items-center mb-3">
+
+                    <div class="col col-md-2 text-right">
+                        <!-- logo costa -->
+                        <img class="logo-section" src="image\costa.png" alt="costa">
+                    </div>
+
+                    <div class="col col-md-4 enlever-padding">
+                        <!-- Bienvenu a bord du costa -->
+                        <span class="bienvenue">Bienvenue à bord du</span>
+                        <span class="bienvenue-costa">Costa Luminosa</span>
+                    </div>
+
+
+                    <div class="col col-md-2">
+                        <!-- j'ai créer une div vide pour pouvoir créer un espace afin de mieux disposer mes blocs-->
+                    </div>
+
+                    <div class="col col-md-3 text-center">
+                        <!-- connectez-vous pour afficher etc -->
+                        <span class="connectez-vous">Connectez-vous pour afficher et<br> bénéficier de nos tarifs
+                            membres</span>
+                    </div>
+
+                </div>
+                <!-- FIN 1ERE ROW -->
+
+                <!-- DEBUT 2ERE ROW -->
+                <div class="row galerie">
+
+                    <!-- DEBUT COL -->
+                    <div class="col col-md-4">
+
+                        <div class="conteneur">
+                            <!-- BONUS : la grande photo de galerie changera au clic utilisateur -->
+                            <img src="image\image1.png" alt='bateau-costa' id="imagePrincipale">
+
+                            <!-- DEBUT BARRE -->
+                            <div id="barre">
+
+                                <img class="image-galerie" src="image\image2.png" alt='thumbnail' id="image2">
+                                <img class="image-galerie" src="image\image3.png" alt='thumbnail' id="image3">
+                                <img class="image-galerie" src="image\image4.png" alt='thumbnail' id="image4">
+                                <img class="image-galerie" src="image\image5.png" alt='thumbnail' id="image5">
+
+                            </div>
+                            <!-- FIN BARRE -->
+
+                        </div>
+                        <!-- FIN CONTENEUR -->
+
+                    </div>
+                    <!-- FIN COL -->
+
+                    <div class="col col-md-3">
+
+                        <p class="texte-photo ml-4">La Costa Luminosa est un navire unique. Le design, les matériaux
+                            luxueux
+                            et raffinés, les nouvelles attractions et les solutions architecturales en font un bateau à
+                            la
+                            fois fascinant et novateur.<br><br>
+                            Une croisière à bord du Costa Luminosa, c'est un voyage dans la lumière sous toutes ses
+                            formes :
+                            de la transparence du cristal des structures aux mille reflets des lampadaires en verre de
+                            Murano, des tissus iridescents des meubles aux jeux de lumière et les spectacles du Théâtre
+                            Phoenix, de l'énergie revitalisante de l'exclusif Spa Costa à l'adrénaline pure de la
+                            réalité
+                            virtuelle.<br>
+                            Depuis l'Atrium Supernova, les étoiles les plus brillantes de l'univers vous accompagneront
+                            sur
+                            Une croisière à bord du Costa Luminosa, c'est un voyage dans la lumière sous toutes ses
+                            formes.
+                        </p>
+
+                    </div>
+
+
+                    <div class="col col-md-3 encadrement-form">
+
+                        <div class="titre-formulaire">
+                            <div class="fond-noir-connexion"><span class="text-center connexion">Se connecter</span></div>
+                            <div class="fond-gris-membre"><a href=""><span class="text-center membre">Devenir membre</span></a></div>
+                        </div>
+                        <form action="" method="">
+                            <div class="mb-3 mt-5"><input type="text" name="name" placeholder="Votre nom"
+                                    class="form-control">
+                            </div>
+                            <div class="mb-3"><input type="text" name="firstname" placeholder="Votre prénom"
+                                    class="form-control"></div>
+                            <div class="mb-3"><input type="text" name="email" placeholder="Votre email"
+                                    class="form-control"></div>
+                            <button class="btn btn-primary w-100">Se connecter</button>
+                        </form>
+
+                    </div>
+
+                </div>
+                <!-- FIN 2ERE ROW -->
+
+
+            </div>
+            <!-- FIN CONTAINER -->
+
+        </section>
+        <!-- FIN SECTION -->
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+    </div>
+    <!-- fin fond gris -->
+
+    <!-- SCRIPT POUR FAIRE FONCTIONNER BOOTSTRAP -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
+    </script>
+
+    <!-- NOTRE CODE JS -->
+    <script src="test.js"></script>
+
+</body>
+
+</html>

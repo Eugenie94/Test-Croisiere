@@ -1,0 +1,352 @@
+/* RESET CSS */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* .titre-cote-logo{  titre header a coté du logo 
+    text-transform: uppercase;
+} */
+
+/******************************** DEBUT HEADER ********************************/
+
+.hamburger {
+    /* couleur + taille menu hamburger  */
+    color: #08acec;
+    font-size: 1.5em;
+}
+
+.telephone {
+    /* couleur + taille telephone */
+    color: #08acec;
+    font-size: 1em;
+    padding-right: 5px;
+}
+
+.numero {
+    font-family: roboto;
+    font-weight: bold;
+}
+
+/******************************** FIN HEADER ********************************/
+
+
+
+/******************************** DEBUT MAIN ********************************/
+.fond-gris {
+    background-color: rgb(219, 219, 219);
+}
+
+.carousel {
+    /* pour gerer la largeur du carousel etc */
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    /* Pour retirer opacity 0.5 de l'arrow du slider. De ce fait elle s'affiche comme dans la maquette */
+    opacity: 1;
+}
+
+.left-arrow {
+    /* pour gerer image left arrow que j'ai inserer */
+    width: 30%;
+    height: auto;
+    margin-right: 100%;
+    border-radius: 50%;
+    box-shadow: 0.3px 1px 1px 0.8px #cccccc;
+}
+
+.right-arrow {
+    /* pour gerer image right arrow que j'ai inserer */
+    width: 30%;
+    height: auto;
+    margin-left: 100%;
+    border-radius: 50%;
+    box-shadow: 0.3px 1px 2px 0.5px #cccccc;
+}
+
+.zindex-sur-slider {
+    /* permet de creer le z index en entourant mon slider de cette div */
+    position: relative;
+    z-index: 1;
+}
+
+.vignette {
+    /* permet de gerer le z-index sur mon slider et la taille de ma vignette */
+    width: 8%;
+    height: auto;
+    position: absolute;
+    z-index: 2;
+    left: 4.1%;
+    top: 14%;
+}
+
+.rectangle-bleu {
+    width: 16%;
+    height: 247px;
+    background-color: rgb(32, 151, 248);
+    position: absolute;
+    z-index: 2;
+    left: 73%;
+    top: 19%;
+    opacity: 0.8;
+}
+
+.logo-repas {
+    /* logo repas dans rectangle bleu */
+    width: 30px;
+    height: auto;
+}
+
+.logo-vol {
+    /* logo avion dans rectangle bleu */
+    width: 13%;
+    height: auto;
+}
+
+.prestation {
+    /* pour aligner mes prestations dans mon rectangle */
+    font-family: roboto;
+    font-size: 12.5px;
+    text-transform: uppercase;
+    color: white;
+}
+
+.prestation-a-partir-de {
+    /* a partir de */
+    font-family: roboto;
+    font-size: 12.5px;
+    color: white;
+    margin-bottom: -3%;
+}
+
+.prestation-prix {
+    /* 659euros */
+    font-family: roboto;
+    font-size: 30px;
+    color: white;
+}
+
+.barre-blanche {
+    /* separateur blanc */
+    height: 2px;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: white;
+}
+
+.titre-slider {
+    /* croisiere allemagne etc */
+    font-family: roboto;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bold;
+    margin-left: 6.5%;
+    margin-bottom: 0 !important;
+}
+
+.sous-titre-slider {
+    /* 11 jours à bord du */
+    font-family: roboto;
+    font-size: 15px;
+    margin-left: 6.5%;
+}
+
+.sous-titre-slider-gras {
+    /* Costa Luminosa ***** */
+    font-family: roboto;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.barre-noire {
+    /* separateur noir */
+    height: 1.7px;
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 0.2%;
+    background-color: black;
+}
+
+
+/******************************** FIN MAIN ********************************/
+
+
+
+/******************************** DEBUT SECTION ********************************/
+
+section {
+    /* pour respecter la petite marge du bas de la maquette */
+    margin-bottom: 1%;
+}
+
+.logo-section {
+    /*bordure gris a coté du logo */
+    border: 1px rgb(148, 146, 146);
+    border-right-style: solid;
+    padding-right: 12%;
+}
+
+.enlever-padding {
+    /* enlever padding de bienvenue a bord pour que ça se rapproche de mon border right */
+    padding-left: 0 !important;
+}
+
+.bienvenue {
+    /* Bienvenue à bord du Costa Luminosa */
+    font-family: roboto;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.bienvenue-costa {
+    /* Bienvenue à bord du Costa Luminosa */
+    font-family: roboto;
+    font-size: 14.5px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+
+/***** DEBUT GALERIE PHOTO *****/
+
+.galerie {
+    /*décale ma galerie sur la droite */
+    margin-left: 7%;
+}
+
+#imagePrincipale {
+    /* je gere la taille de mon image principale */
+    width: 110%;
+    height: auto;
+}
+
+#barre {
+    /* permet que mes autres photos soit toutes a bonnes tailles */
+    width: 27.5%;
+    display: flex;
+    /* me permet d'avoir mes photos alignée en dessous de la grande */
+    flex-direction: row;
+    /* pareil */
+}
+
+#barre img {
+    /* permet de créer le pointer pour montrer au client qu'il peut cliquer sur la photo */
+    cursor: pointer;
+}
+
+.image-galerie {
+    /* permet que mes images fassent maximum 100% de leur taille */
+    max-width: 100%;
+}
+
+#image2 {
+    padding-left: 0 !important;
+    /* cela me permet de ne pas avoir de padding sur la gauche de ma premiere image */
+    padding-top: 8%;
+    /* cela me permet de creer un padding top parce que si je et #image1 en bas ca va me creer le padading left et je ne veux pas ça */
+}
+
+#image3,
+#image4,
+#image5 {
+    /* me permet de creer un padding autour de mes 3 autres mini photo */
+    padding-left: 8%;
+    padding-top: 8%;
+}
+
+/***** FIN GALERIE PHOTO *****/
+
+
+/***** DEBUT BLOC FORMULAIRE *****/
+
+.texte-photo {
+    /* texte a coté de la galerie */
+    font-family: roboto;
+    font-size: 9.7px;
+}
+
+.encadrement-form {
+    /* permet au form d'avoir un border */
+    border: 1px solid #CCC;
+    padding-bottom: 0 !important;
+    margin-left: 7%;
+}
+
+.connectez-vous {
+    /* phrase Connectez-vous au dessus du formulaire */
+    font-family: roboto;
+    font-size: 12.2px;
+    font-weight: bold;
+}
+
+.titre-formulaire {
+    /* gere lespace entre les deux titre */
+    display: flex;
+    justify-content: space-around;
+}
+
+.fond-noir-connexion{
+    /* fond noir connexion */
+    background-color: rgb(80, 80, 80);
+    padding: 10% 5% 10% 5%;
+}
+
+.connexion { 
+    /* se connecter */
+    font-size: 12px;
+    color: white;
+    font-weight: bold;
+}
+
+.fond-gris-membre{
+    /* devenir membre */
+    background-color: rgb(194, 194, 194);
+    padding: 10% 8% 10% 8%;
+}
+
+.membre {
+    /* devenir membre */
+    font-size: 12px;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+
+/***** FIN BLOC FORMULAIRE  *****/
+
+
+/******************************** FIN SECTION ********************************/
+
+
+
+/******************************** DEBUT MEDIA QUERIES ********************************/
+
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    /* rectangle bleu */
+
+    .rectangle-bleu {
+        width: 20%;
+    }
+}
+
+@media screen and (min-width: 200px) and (max-width: 768px) {
+
+    .rectangle-bleu {
+        display: none;
+    }
+
+}
+
+/******************************** FIN MEDIA QUERIES ********************************/
